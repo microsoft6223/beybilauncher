@@ -6,9 +6,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+
+      - name: Depodaki dosyalar
+        run: ls -la
 
       - uses: actions/setup-java@v4
         with:
